@@ -1,0 +1,333 @@
+time, mark, audio, video{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font-size: inherit;
+    vertical-align: baseline;
+}
+html{
+    height: 100%;
+    font-size: 100%;
+}
+body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font: 14px/22px Arial, Tahoma, Sans-serif;
+    background: #ebebeb;
+}
+ol, ul{
+    list-style: none;
+}
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: #0098e1;
+}
+a:hover{
+    text-decoration: none;
+}
+a:active, a:hover{
+    outline: none;
+}
+img{
+    border: none;
+    vertical-align: middle;
+}
+/* ===== Общие стили ===== */
+
+.clearfix:before, .clearfix:after{
+    content: "";
+    display: table;
+}
+.clearfix:after{
+    clear: both;
+}
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+.text-right{
+    text-align: right;
+}
+#wrapper{
+    max-width: 1360px;
+    margin: 0 auto;
+    padding: 0 20px;
+    font-family: 'Overpass', sans-serif;
+}
+.container{
+    max-width: 1360px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.container .clearfix{
+    max-width: 1360px;
+    max-height: fit-content;
+}
+header{
+    max-width: 1000px;
+    position: relative;
+    padding: 10px;
+    background: #3e4156;
+    z-index: 1;
+}
+.logo{
+    float: left;
+}
+.logo img{
+    width: 120px;
+    height: 50px;
+}
+.logo span{
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+}
+.icon-menu{
+    display: none;
+    height: 30px;
+    width: 12px;
+    float: left;
+    padding: 0;
+    cursor: pointer;
+    margin-top: 7px;
+    margin-right: 10px;
+    margin-left: -5px;
+}
+.divide{
+    display: block;
+    height: 2px;
+    margin: 3px 0;
+    background: #f1f1f1;
+}
+.sidebar{
+    display: none;
+    width: 200px;
+    padding: 10px;
+    float: left;
+    background: #3e4156;
+    transition: left 1s ease-out 0.5s;
+    -webkit-transition: left 0.5s ease-out 0.5s;
+    -moz-transition: left 0.5s ease-out 0.5s;
+    -o-transition: left 0.5s ease-out 0.5s;
+}
+.menu{
+    display: none;
+}
+.nav{
+    float: right;
+}
+.nav, #touch-menu{
+    background: #3e4156;
+}
+.nav li{
+    float: left;
+}
+.nav li a, #touch-menu{
+    display: block;
+    padding: 12px 15px;
+    font-weight: bold;
+    font-size: 14px;
+    color: #fff;
+}
+.nav li a:hover, #touch-menu:hover{
+    background: #515572;
+}
+
+.main{
+    margin-bottom: 20px;
+}
+.sidebar li{
+    list-style: none;
+    border-bottom: 1px solid #aaa;
+}
+.sidebar li:last-child{
+    border-bottom: none;
+}
+.sidebar li a{
+    color: #ffffff;
+    display: block;
+    padding: 8px;
+    text-decoration: none;
+    text-transform: uppercase;
+    background: #434a83;
+}
+.sidebar li a:hover{
+    color: #fff;
+    background: rgb(23, 160, 160);
+}
+.tilt{
+    width: fit-content;
+    padding: 5px;
+    margin: 0 auto;
+}
+.content{
+    width: 90%;
+    margin: 0 auto;
+    padding: 15px;
+    background: transparent;
+    text-align: justify;
+    font-size: 1.3em;
+}
+.content img {
+    border-radius: 10px;
+    margin: 5px;
+    padding: 13px;
+    width: 450px;
+    height: 300px;
+    background: rgba(13, 1, 124, 0.096);
+}
+
+.content .b{
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.uper h2{
+    text-align: center;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    font-size: 2em;
+    font-style: italic;
+    text-shadow: 2px 2px rgb(97, 152, 235);
+}
+.content h3{
+    text-align: center;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+.content p{
+    padding: 5px;
+    text-align: justify;
+}
+#negr{
+    width: 300px;
+    height: 420px;
+}
+#musa{
+    height: 600px;
+}
+a.back-to-top {
+	display: none;
+	width: 60px;
+	height: 60px;
+	text-indent: -9999px;
+	position: fixed;
+	z-index: 999;
+	right: 20px;
+	bottom: 20px;
+	background: transparent url(images/up.png) no-repeat center 43%;
+	border-radius: 30px;
+}
+.footer{
+    padding: 15px;
+    background: #000;
+    color: #fff;
+}
+
+/*====================Планшеты=========================================*/
+
+@media (max-width:768px){
+    #wrapper{
+        padding: 0;
+    }
+    body{
+        padding-top: 50px;
+    }
+    header{
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 50px;
+        z-index: 1;
+    }
+    .logo img{
+        padding-top: 0px;
+        height: 35px;
+        width: 84px;
+    }
+    .menu{
+        height: 20px;
+        width: 50px;
+    }
+    .icon-menu{
+        display: block;
+    }
+    .sidebar{
+        display: table;
+        height: fit-content;
+        position:absolute;
+        left: -300px;
+        top: 50px;
+        width: 200px;
+    }
+    .sidebar ul, .sidebar ul li{
+        display: block;
+        padding: 3px;
+        background: #6290cc;
+    }
+    .sidebar.active{
+        display: table;
+        position: fixed;
+        width: 200px;
+        height: fit-content;
+        left: 0;
+        top: 50px;
+        transition: left 0.5s ease-out 0.5s;
+        -webkit-transition: left 0.5s ease-out 0.5s;
+        -moz-transition: left 0.5s ease-out 0.5s;
+        -o-transition: left 0.5s ease-out 0.5s;
+    }
+    .nav{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        display: none;
+        overflow: inherit;
+    }
+    .munu li{
+        float: none;
+    }
+    .menu li a{
+        color: #666;
+        border-top: 1px solid #eee;
+        border-left: 3px solid transparent;
+        background: #fff;
+    }
+    .menu li:first-child a{
+        border-top: none;
+    }
+    .menu li a:hover{
+        color: #333;
+        border-left: 3px solid #515572;
+        background: #f0f0f0;
+    }
+    .content{
+        width: 95%;
+        margin: 0 auto;
+    }
+}
+/*==================Смартфоны===========================================*/
+
+@media (max-width:480px) and (min-width:54px){
+    .sidebar ul li{
+        width: auto;
+        margin-bottom: 0px;
+    }
+}
+/*=============================================================*/
